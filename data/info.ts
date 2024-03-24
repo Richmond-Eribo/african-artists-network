@@ -2,12 +2,12 @@ export const whatWeDo = [
   {
     name: 'Newsletter',
     svg: '/newsletter.svg',
-    color: 'bg-fuchsia-600',
+    color: 'bg-[#c026d3]',
   },
   {
     name: 'Podcast',
     svg: '/podcast.svg',
-    color: 'bg-yellow-300',
+    color: 'bg-[#fde047]',
   },
   {
     name: 'Opportunities',
