@@ -1,9 +1,27 @@
-import {whatWeDo} from '@/data/info'
+// import {whatWeDo} from '@/data/info'
 import Image from 'next/image'
 import WaitlistForm from './WaitlistForm'
 import Logo from './Logo'
 
 export default function Home() {
+ const whatWeDo = [
+    {
+      name: 'Newsletter',
+      svg: '/newsletter.svg',
+      color: 'bg-fuchsia-600',
+    },
+    {
+      name: 'Podcast',
+      svg: '/podcast.svg',
+      color: 'bg-yellow-300',
+    },
+    {
+      name: 'Opportunities',
+      svg: '/opportunities.svg',
+      color: 'bg-yellow-500',
+    },
+  ]
+
   return (
     <main className='bg-[url("/gridImage.jpg")] flex flex-col justify-center items-center gap lg:gap-14 gap-8  min-h-screen bg-center bg-cover px-2 py-10'>
       <div className='h-20 w-20 '>
@@ -25,7 +43,7 @@ export default function Home() {
         {whatWeDo.map(m => (
           <div
             key={m.name}
-            className={`${m.color} max-w-96 lg:h-44  px-5 py-5  border-4 border-black flex-col justify-start items-start lg:gap-9 gap-3 inline-flex w-full`}
+            className={` ${m.color} max-w-96 lg:h-44  px-5 py-5  border-4 border-black flex-col justify-start items-start lg:gap-9 gap-3 inline-flex w-full`}
           >
             <figure className='relative lg:h-10 lg:w-10 h-6 w-6 '>
               <Image
