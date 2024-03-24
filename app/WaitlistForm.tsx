@@ -18,7 +18,7 @@ const WaitlistForm = () => {
         placeholder='Enter your Email'
         className='max-w-96 w-full h-11 bg-white border-4 border-black px-2 rounded-none'
       />
-      <button className='max-w-96 w-full h-11 bg-yellow-500 border-4 border-black justify-center items-center uppercase text-xl font-semibold'>
+      <button className='max-w-96 w-full h-11 bg-yellow-500 border-4 border-black justify-center items-center uppercase lg:text-xl font-semibold'>
         Submit
       </button>
     </form>
