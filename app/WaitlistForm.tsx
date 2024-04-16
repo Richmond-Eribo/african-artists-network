@@ -1,28 +1,28 @@
-'use client'
+"use client";
 
 const WaitlistForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
 
   return (
     <form
       onSubmit={handleSubmit}
-      className='flex flex-col gap-2 w-full items-center'
+      className="flex flex-col gap-2 w-full items-center"
     >
-      <h3 className='font-semibold'>Join the waitlist</h3>
+      <h3 className="font-semibold">Join the waitlist</h3>
       <input
-        type='email'
-        name='email'
-        id='email '
-        placeholder='Enter your Email'
-        className='max-w-96 w-full h-11 bg-white border-4 border-black px-2 rounded-none'
+        type="email"
+        name="email"
+        id="email "
+        placeholder="Enter your Email"
+        className="max-w-96 w-full h-11 bg-white border-2 border-black px-2 rounded-none"
       />
-      <button className='max-w-96 w-full h-11 bg-yellow-500 border-4 border-black justify-center items-center uppercase lg:text-xl font-semibold'>
+      <button className="max-w-96 w-full h-11 bg-yellow-500 border-2 border-black justify-center items-center uppercase lg:text-xl font-semibold">
         Submit
       </button>
     </form>
-  )
-}
+  );
+};
 
-export default WaitlistForm
+export default WaitlistForm;
